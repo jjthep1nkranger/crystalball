@@ -2,18 +2,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:rotation="false"
     tools:context=".CrystalBall">
-
+    <!--// this portion determines what the image on the screen will look like-->
     <ImageView
-        <!--// this portion determines what the image on the screen will look like-->
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/ball01"
         android:background="#000"
         />
+    <!--this shows the text on the screen that is visible-->
     <TextView
-        <!--this shows the text on the screen that is visible-->
-        android:id="@+id/answerText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:layout_centerInParent="true"
+        android:id="@+id/answerText"
+        />
 </RelativeLayout>
