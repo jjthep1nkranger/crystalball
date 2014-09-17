@@ -13,8 +13,9 @@ public class CrystalBall extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crystal_ball);
+
         answerText = (TextView) findViewById(R.id.answerText);
-        answerText.setText("Reply is hazy, please try again tommorow.");
+        answerText.setText(predictions.get().getprediction());
     }
 
 
