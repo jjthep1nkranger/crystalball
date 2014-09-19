@@ -1,5 +1,5 @@
 package android.annesj.crystalball;
-
+//the activities that we are going to use for running the program
 import android.app.Activity;
 import android.content.Context;
 import android.hardware.Sensor;
@@ -14,10 +14,10 @@ import android.widget.Toast;
 
 public class CrystalBall extends Activity {
     private TextView answerText;
-
+//creates the
     private SensorManager SensorManager;
-    private sensor accelerometer;
-    private float acceleration;
+    private Sensor accelerometer;
+    private float Acceleration;
     private float CurrentAcceleration;
     private float PreviousAcceleration;
 
@@ -31,8 +31,8 @@ public class CrystalBall extends Activity {
         PreviousAcceleration = CurrentAcceleration;
         CurrentAcceleration = FloatMath.sqrt(x * x + y * y + z * z);
         float delta = CurrentAcceleration-PreviousAcceleration;
-        acceleration = acceleration*0.9f + delta;
-        if(acceleration = 18){
+        Acceleration = Acceleration*0.9f + delta;
+        if(Acceleration = 18){
             Toast toast = Toast.makeText(getApplication(), "Device has shaken", Toast.LENGTH_SHORT)
             toast.show();
         }

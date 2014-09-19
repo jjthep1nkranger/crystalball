@@ -5,12 +5,14 @@
     tools:context=".CrystalBall">
 
     <ImageView
+        <!--// this portion determines what the image on the screen will look like-->
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/ball01"
         android:background="#000"
         />
     <TextView
+        <!--this shows the text on the screen that is visible-->
         android:id="@+id/answerText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
